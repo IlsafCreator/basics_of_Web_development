@@ -1,1 +1,3 @@
-# basics_of_Web_development
+# Web-программирование
+Хасанов И.И. 
+ПС-12
