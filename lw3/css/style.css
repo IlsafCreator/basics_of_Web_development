@@ -1,0 +1,270 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 1440px;
+    height: 1910px;
+}
+
+/* site navigation */
+.site-navigation
+{
+    text-align: right;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    padding-right: 150px;
+}
+
+.site-navigation_button
+{
+    color: #FFFFFF;
+    text-align: right;
+    margin-right: 40px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.brand-name
+{
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    line-height: 26px;
+    color: #FFFFFF;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+/* header */
+header
+{
+    background: url("../images/header_background.png");
+    width: 1440px;
+    height: 500px;
+}
+
+.show-latest, .motto-wrapper
+{
+    text-align: center;
+}
+
+.motto-wrapper_text
+{
+    font-family: 'Oxygen', sans-serif;
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 20px;
+    opacity: 0.63;
+}
+
+.motto-wrapper_motto
+{
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    line-height: 51px;
+    letter-spacing: 2px;
+    margin: 12px;
+}
+
+/* main content */
+.articles-type-filter
+{
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+.articles-type-filter_button
+{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #768088;
+    margin: 20px;
+    padding: 3px;
+}
+
+.articles-type-filter_button:hover
+{
+    background-color: rgb(233, 233, 233);
+    transition: 350ms;
+}
+
+.show-latest_button{
+    width: 167px;
+    height: 44px;
+    background-color: #DD783F;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Oxygen', sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 40px;
+    transition: 250ms;
+}
+
+.show-latest_button:hover{
+    cursor: pointer;
+    width: 200px;
+    background-color: #f37e3b;
+}
+
+.site-content
+{
+    background-color: #F6F6F6;
+    padding: 10px;
+}
+
+.featured-posts_title, .most-recent_title
+{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    color: #2E2E2E;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 27px;
+}
+
+/* main content -> posts */
+.post
+{
+    width: 460px;
+    height: 280px;
+    transition: 250ms;
+}
+
+.post:hover
+{   
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    
+}
+
+.post>*
+{
+    color: #FFFFFF;
+}
+
+.post_title
+{
+    font-family: 'Lora', serif;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.post_short-description
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.7;
+}
+
+.post__author_name, .post__author_publication-date
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    line-height: 35px;
+    opacity: 0.7;
+}
+
+.post__author_userpic
+{
+    border-radius: 60px;
+    width: 26px;
+}
+
+.first-post
+{
+    background: url("../images/mat\'s_post_picture.png");
+}
+
+.second-post
+{
+    background: url("../images/william\'s_post_picture.png");
+}
+
+.first-post, .second-post
+{
+    border-radius: 3px;
+}
+
+/* main content -> recent posts */
+.recent-posts .post
+{
+    background-color: #FFFFFF;
+    width: 296px;
+    height: 291px;
+}
+
+.recent-posts .post__author_name, .recent-posts .post__author_publication-date
+{
+    color: #999999;
+}
+
+.recent-posts .post_title
+{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.post_image
+{
+    width: 296px;
+    height: 150px;
+}
+
+.recent-posts .post_short-description
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7A7A7A;
+}
+
+
+/* footer */
+.footer>.navigation_buttons
+{
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    opacity: 0.60;
+}
+
+footer{
+    background: url("../images/footer_background.png");
+    height: 89px;    
+}
+
+/* scrollbar "customing" */
+::-webkit-scrollbar 
+{
+    width: 8px;
+    height: 8px;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    background: #cdcecf; 
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #b2b3b4; 
+}
