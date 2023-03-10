@@ -239,10 +239,10 @@ header
 
 
 /* footer */
-.footer>.navigation_buttons
+.footer .site-navigation_button
 {
     font-size: 11px;
-    line-height: 20px;
+    line-height: 26px;
     letter-spacing: 1px;
     opacity: 0.60;
 }
