@@ -1,0 +1,420 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  width: 1440px;
+  height: 2198px;
+  background-color: #F7F7F7;
+
+}
+a
+{
+  text-decoration: none;
+}
+
+/* header section */
+.header
+{
+  background-image:  url("../images/header_background.png");
+  width: 1440px;
+  height: 500px;
+}
+
+.header__wrapper-block
+{
+  width: inherit;
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo
+{
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-left: 250px;
+  padding: 4px 0px 11px;
+}
+.navigation-bar 
+{
+  margin-right: 252px;
+}
+.navigation-bar__item
+{
+  text-decoration: none;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  padding: 10px 18px;
+}
+
+.header-text
+{
+  width: 940px;
+  height: 159px;
+  margin: auto;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.header-text__title
+{
+  font-family: 'Lora', serif;
+  font-size: 50px;
+  line-height: 51px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-top: -7px;
+}
+
+.header-text__subtitle
+{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFFA1;
+  margin-top: 20px;
+}
+
+.view-latest-btn{
+  width: 167px;
+  height: 44px;
+  background-color: #DD783F;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Oxygen', sans-serif;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 40px;
+  transition: 250ms;
+  margin-top: 31px;
+}
+
+.view-latest-btn:hover{
+  cursor: pointer;
+  width: 200px;
+  background-color: #f37e3b;
+}
+
+/* filter section */
+.filter-block
+{
+  background-color: #FFFFFF;
+}
+
+.articles-type-filter
+{
+  width: 960px;
+  height: 65px;
+  margin: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+.articles-type-filter__button
+{
+  width: 139px;
+  height: 46px;
+  display: inline-block;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #768088;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.articles-type-filter__button:hover
+{
+  background-color: rgb(233, 233, 233);
+    transition: 350ms;
+}
+
+.articles-type-filter__button a{
+  color: #768088;
+}
+/* ________________________________ */
+
+
+/* featured posts section*/
+.featured-posts-block
+{
+  width: 940px;
+  height: 355x;
+  margin: auto;
+}
+
+.featured-posts-block__title, .most-recent-block__title
+{
+  width: 940px;
+  margin: 60px auto 0;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  color: #2E2E2E;
+}
+
+.featured-posts-block__title>p, .most-recent-block__title>p
+{
+  text-align: center;
+}
+
+hr
+{
+  margin: 16px auto 0;
+  width: 188px;
+  height: 1px;
+  border: none;
+  background-color: #DEDEDE;
+}
+
+.featured-posts-container
+{
+  margin-top: 16px;
+  width: 940px;
+  height: 294px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.featured-post
+{
+  width: 460px;
+  height: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-post
+{
+    background: url("../images/mat\'s_post_picture.png");
+}
+
+.second-post
+{
+    background: url("../images/william\'s_post_picture.png");
+}
+
+.first-post, .second-post
+{
+    border-radius: 3px;
+}
+
+
+.featured-post__author_userpic
+{
+    border-radius: 60px;
+    width: 26px;
+}
+.featured-post__author
+{
+  width: 420px;
+  height: 35px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.featured-post__title
+{
+    font-family: 'Lora', serif;
+    font-size: 27px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.featured-post__short-description
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.7;
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+
+.featured-post__author_name, .featured-post__author_publication-date
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    line-height: 35px;
+    opacity: 0.7;
+    color: #FFFFFF;
+}
+.featured-post__author_publication-date
+{
+  padding-left: 210px;
+}
+
+.recent-posts .post__author_name, .recent-posts .post__author_publication-date
+{
+    color: #999999;
+}
+
+.featured-post-wrapper
+{
+  width: 420px;
+  display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-left: 20px;
+  /* margin: 157px auto auto; */
+}
+
+.theme-of-post
+{
+  height: 26px;
+    width: 87px;
+    background: #DD783F;
+    border-radius: 2px;
+    margin: 20px;
+}
+.theme-of-post__text
+{
+  font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 6px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.most-recent-posts
+{
+  width: 940px;
+  height: 752px;
+  margin: auto;
+}
+
+
+
+.posts-container
+{
+  height: 632px;
+  display: flex;
+  margin-top: 22px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.post
+{
+  width: 296px;
+  height: 291px;
+  background-color: #FFFFFF;
+}
+.post__text
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.post__author_userpic
+{
+    border-radius: 60px;
+    width: 26px;
+}
+
+.post__author_name
+{
+
+}
+
+.post__author_publication-date
+{
+  
+}
+
+.post__author_name, .post__author_publication-date
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 12px;
+    line-height: 35px;
+    opacity: 0.7;
+}
+
+.post__title
+{
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+
+.post__short-description
+{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.7;
+}
+
+
+.post__author
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+
+
+
+/* scrollbar "customing" */
+::-webkit-scrollbar 
+{
+    width: 8px;
+    height: 8px;
+}
+   
+::-webkit-scrollbar-thumb 
+{
+    background: #cdcecf; 
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: #b2b3b4; 
+}
