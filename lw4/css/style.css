@@ -177,7 +177,7 @@ a
   text-align: center;
 }
 
-hr
+.featured-posts-block__title>hr,.most-recent-block__title>hr
 {
   margin: 16px auto 0;
   width: 188px;
@@ -341,27 +341,26 @@ hr
   height: 291px;
   background-color: #FFFFFF;
 }
+.post__text>hr
+{
+  width: inherit;
+  height: 1px;
+  border: none;
+  background-color: #EFEFEF;
+}
 .post__text
 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  height: 141px;
+  justify-content: flex-end;
 }
 
 .post__author_userpic
 {
     border-radius: 60px;
     width: 26px;
-}
-
-.post__author_name
-{
-
-}
-
-.post__author_publication-date
-{
-  
 }
 
 .post__author_name, .post__author_publication-date
@@ -396,11 +395,18 @@ hr
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  margin: 9px 15px;
 }
 
+.post__author_name
+{
+  margin-left: 5px;
+}
 
-
-
+.post__author_publication-date
+{
+  margin-left: 102px;
+}
 
 /* scrollbar "customing" */
 ::-webkit-scrollbar 
