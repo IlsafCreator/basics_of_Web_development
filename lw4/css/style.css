@@ -33,8 +33,6 @@ a {
     font: 26px/26px 'Lora', serif;
     color: #FFFFFF;
     width: 92px;
-}
-.site-navigation_header .logo {
     padding: 3px 0px 11px;
 }
 
@@ -53,7 +51,7 @@ a {
 .nav-bar__elem {
     position: relative;
 }
-.nav-bar__elem:before {
+.nav-bar__elem::before {
     content: "";
     position: absolute;
     width: 0;
@@ -63,30 +61,31 @@ a {
     background-color: #FFFFFF;
     transition: all 0.3s ease-in-out;
 }
-.nav-bar__elem:hover:before {
+.nav-bar__elem:hover::before {
     left: 0;
     width: 100%;
 }
 
-.header-text {
+.header__text {
     padding: 110px 250px 157px;
     text-align: center;
 }
 
-.header-text__title {
+.header__title {
     font: 50px/1 "Lora";
     letter-spacing: 2px;
     color: #FFFFFF;
     margin-top: -7px;
 }
 
-.header-text__subtitle {
+.header__subtitle {
     font: 17px/20px "Oxygen", sans-serif;
     color: #FFFFFFA1;
     margin-top: 20px;
 }
 
-.view-latest-btn {
+.header__button {
+    display: inline-block;
     width: 167px;
     margin-top: 31px;
     padding: 12px 31px;
@@ -98,20 +97,20 @@ a {
     transition: 250ms;
 }
 
-.view-latest-btn:hover {
+.header__button:hover {
     cursor: pointer;
     width: 185px;
     background-color: #f37e3b;
 }
 
 /* filter section */
-.filter-block {
+.filter {
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
 }
 
-.filter {
+.filter__list {
     padding-top: 9px;
     padding-bottom: 10px;
     background-color: #FFFFFF;
@@ -122,7 +121,7 @@ a {
 
 }
 
-.filter__button {
+.filter__list-item {
     width: 139px;
     height: 46px;
     font: 14px/20px 'Lora', serif;
@@ -131,16 +130,16 @@ a {
     margin-right: 21px;
 }
 
-.filter__button:last-child {
+.filter__list-item:last-child {
     margin-right: 0;
 }
 
-.filter__button:hover {
+.filter__list-item:hover {
     background-color: rgb(233, 233, 233);
     transition: 350ms;
 }
 
-.filter__button a {
+.filter__link {
     width: 100%;
     height: 100%;
     display: flex;
@@ -161,28 +160,22 @@ a {
 }
 
 /* featured posts section*/
-.featured-posts-block {
-}
 
-.featured-posts-block__title,
-.most-recent-block__title {
-    display: flex;
-    justify-content: center;
+
+.featured-posts__title,
+.recent-posts__title {
+    margin: auto;
     padding-top: 60px;
     font: 20px/27px 'Oxygen', sans-serif;
     letter-spacing: 2px;
     color: #2E2E2E;
-}
-
-.featured-posts-block__title>p,
-.most-recent-block__title>p {
     text-align: center;
     width: 188px;
     padding-bottom: 16px;
     border-bottom: solid 1px #DEDEDE;
 }
 
-.featured-posts-block-container {
+.featured-posts__container {
     padding-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -199,10 +192,10 @@ a {
 }
 
 .featured-post:hover{
-    box-shadow: 5px 5px 2px rgb(83, 85, 87);
+    box-shadow: 5px 5px 5px rgb(155, 156, 158);
 }
 
-.featured-post-wrapper {
+.featured-post__wrapper {
     width: 420px;
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +227,7 @@ a {
     color: #FFFFFF;
 }
 
-.featured-post__short-description {
+.featured-post__text{
     font: 14px/25px 'Oxygen', sans-serif;
     opacity: 0.7;
     color: #FFFFFF;
@@ -246,7 +239,7 @@ a {
 }
 
 .featured-post__author-name,
-.featured-post__author-publication-date {
+.featured-post__publication-date {
     font: 12px/35px 'Oxygen', sans-serif;
     opacity: 0.7;
     color: #FFFFFF;
@@ -282,19 +275,19 @@ a {
     border-radius: 3px;
 }
 
-.posts-container {
+.recent-posts__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 22px 12px 0px;
 }
 
-.most-recent-posts {
+.recent-posts {
     width: 960px;
 }
 
-.most-recent-posts .post__author-name,
-.most-recent-posts .post__author-publication-date {
+.recent-posts .post__author-name,
+.recent-posts .post__author-publication-date {
     color: #999999;
 }
 
@@ -310,7 +303,7 @@ a {
 }
 
 .post:hover {
-    box-shadow: 5px 5px 2px rgb(219, 221, 223);
+    box-shadow: 5px 5px 5px rgb(219, 221, 223);
 }
 
 
@@ -389,7 +382,7 @@ a {
     position: relative;
 }
 
-.feedback-form {
+.footer__top {
     padding-top: 19px;
     display: flex;
     flex-direction: column;
@@ -402,7 +395,7 @@ a {
     display: flex;
 }
 
-.feedback-form__text {
+.footer__title {
     text-align: center;
     font: 25px/30px "Oxygen", sans-serif;
     color: #EFEFEF;
@@ -440,7 +433,7 @@ a {
     color: #F8F8F8;
 }
 
-.footer-wrapper{
+.footer__bottom{
     width: inherit;
     background-color: rgba(35, 47, 56, 0.6);
     position: absolute;
@@ -454,10 +447,6 @@ a {
     font: 11px/26px 'Oxygen', sans-serif;
     letter-spacing: 1px;
     opacity: 0.6;
-}
-
-.site-navigation_footer .logo{
-    padding: 3px 0px 5px 10px;
 }
 
 /* scrollbar "customing" */

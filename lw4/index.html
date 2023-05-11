@@ -24,67 +24,65 @@
         <a href="#" class="nav-bar__elem">CONTACT</a>
       </nav>
     </div>
-    <div class="header-text">
-      <h1 class="header-text__title">Let's do it together.</h1>
-      <p class="header-text__subtitle">We travel the world in search of stories. Come along for the ride.</p>
-      <button class="view-latest-btn" onclick="window.location.href='the-road-ahead.html';">View Latest Posts</button>
+    <div class="header__text">
+      <h1 class="header__title">Let's do it together.</h1>
+      <p class="header__subtitle">We travel the world in search of stories. Come along for the ride.</p>
+      <a class="header__button" href="the-road-ahead.html">View Latest Posts</a>
     </div>
   </header>
-  <nav class="filter-block">
-    <ul class="filter">
-      <li class="filter__button"><a href="#">Nature</a></li>
-      <li class="filter__button"><a href="#">Photography</a></li>
-      <li class="filter__button"><a href="#">Relaxation</a></li>
-      <li class="filter__button"><a href="#">Vacation</a></li>
-      <li class="filter__button"><a href="#">Travel</a></li>
-      <li class="filter__button"><a href="#">Adventure</a></li>
+  <nav class="filter">
+    <ul class="filter__list">
+      <li class="filter__list-item"><a class="filter__link" href="#">Nature</a></li>
+      <li class="filter__list-item"><a class="filter__link" href="#">Photography</a></li>
+      <li class="filter__list-item"><a class="filter__link" href="#">Relaxation</a></li>
+      <li class="filter__list-item"><a class="filter__link" href="#">Vacation</a></li>
+      <li class="filter__list-item"><a class="filter__link" href="#">Travel</a></li>
+      <li class="filter__list-item"><a class="filter__link" href="#">Adventure</a></li>
     </ul>
   </nav>
   <main class="main-body">
-    <div class="featured-posts-block">
-      <div class="featured-posts-block__title">
-        <p>Featured Posts</p>
-      </div>
-      <div class="featured-posts-block-container">
-        <article class="featured-post first-post">
-          <div class="featured-post-wrapper">
+    <div class="featured-posts">
+      <p class="featured-posts__title">Featured Posts</p>
+      <div class="featured-posts__container">
+        <article class="featured-posts__post featured-post first-post">
+          <div class="featured-post__wrapper">
             <p class="featured-post__title">The Road Ahead</p>
-            <p class="featured-post__short-description">The road ahead might be paved - it might not be.</p>
+            <p class="featured-post__text">The road ahead might be paved - it might not be.</p>
             <div class="featured-post__info">
               <div class="featured-post__author">
                 <img class="featured-post__author-userpic" src="./images/mat's_profile_picture.png" alt="user face">
                 <span class="featured-post__author-name">Mat Vogels</span>
               </div>
-              <span class="featured-post__author-publication-date">September 25, 2015</span>
+              <span class="featured-post__publication-date">September 25, 2015</span>
             </div>
           </div>
         </article>
-        <article class="featured-post second-post">
+        <article class="featured-posts__post featured-post second-post">
           <div class="theme-of-post">
             <p class="theme-of-post__text">
               ADVENTURE
             </p>
           </div>
-          <div class="featured-post-wrapper">
+          <div class="featured-post__wrapper">
             <p class="featured-post__title">From Top Down</p>
-            <p class="featured-post__short-description">Once a year, go someplace you've never been before.</p>
+            <p class="featured-post__text">Once a year, go someplace you've never been before.</p>
             <div class="featured-post__info">
               <div class="featured-post__author">
                 <img class="featured-post__author-userpic" src="./images/william's_profile_picture.png" alt="user face">
                 <span class="featured-post__author-name">William Wong</span>
               </div>
-              <span class="featured-post__author-publication-date">September 25, 2015</span>
+              <span class="featured-post__publication-date">September 25, 2015</span>
             </div>
           </div>
         </article>
       </div>
     </div>
-    <div class="most-recent-posts">
-      <div class="most-recent-block__title">
+    <div class="recent-posts">
+      <div class="recent-posts__title">
         <p>Most Recent</p>
       </div>
-      <div class="posts-container">
-        <div class="post">
+      <div class="recent-posts__container">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/balloons.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -100,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="post">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/golden_gate.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -116,7 +114,7 @@
             </div>
           </div>
         </div>
-        <div class="post">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/lake.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -132,7 +130,7 @@
             </div>
           </div>
         </div>
-        <div class="post">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/sea_waves.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -148,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="post">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/fog.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -164,7 +162,7 @@
             </div>
           </div>
         </div>
-        <div class="post">
+        <div class="recent-posts__post post">
           <img class="post__image" src="./images/waterfall.png" alt="balloons">
           <div class="post__content">
             <div class="post__text">
@@ -185,14 +183,14 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="feedback-form">
-      <p class="feedback-form__text">Stay in Touch</p>
-      <div class="input-mail">
-        <input class="input-mail__field" type="text" placeholder="Enter your email address">
+    <div class="footer__top">
+      <p class="footer__title">Stay in Touch</p>
+      <div class="footer__form input-mail">
+        <input class="input-mail__field" type="text" name="email" placeholder="Enter your email address">
         <button class="input-mail__btn" type="submit"><span>Submit</span></button>
       </div>
     </div>
-    <div class="footer-wrapper">
+    <div class="footer__bottom">
       <div class="site-navigation site-navigation_footer">
         <span class="logo logo_footer">Escape.</span>
         <nav class="nav-bar">

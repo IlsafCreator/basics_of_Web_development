@@ -50,23 +50,38 @@ a {
   letter-spacing: 0.6px;
   color: #2E2E2E;
   padding: 10px 20px;
+  position: relative;
 }
 
-.header-text {
+.nav-bar__elem::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.nav-bar__elem:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+.header__text {
   padding: 89px 250px;
   padding-bottom: 112px;
-  /* height: 159px; */
   text-align: center;
 }
 
-.header-text__title {
+.header__title {
   font: 50px/1 "Lora";
   letter-spacing: 2px;
   color: #2E2E2E;
   margin-top: -7px;
 }
 
-.header-text__subtitle {
+.header__subtitle {
   font: 17px/20px "Oxygen", sans-serif;
   color: #2e2e2ea1;
   margin-top: 20px;
@@ -75,12 +90,16 @@ a {
 /* ___main section___ */
 
 .post__text{
-  padding: 140px 240px;
+  padding: 140px 240px 130px;
   font: 24px/35px "Oxygen", sans-serif;
 }
 
+.post__image{
+  font-size: 0;
+}
+
 .paragraph{
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 }
 
 /* ___footer___ */
@@ -95,7 +114,7 @@ a {
   position: relative;
 }
 
-.feedback-form {
+.footer__top {
   padding-top: 19px;
   display: flex;
   flex-direction: column;
@@ -108,12 +127,12 @@ a {
   display: flex;
 }
 
-.feedback-form__text {
+.footer__title {
   text-align: center;
   font: 25px/30px "Oxygen", sans-serif;
   color: #EFEFEF;
   width: 188px;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   border-bottom: solid 1px #DEDEDE;
 }
 
@@ -146,7 +165,7 @@ a {
   color: #F8F8F8;
 }
 
-.footer-wrapper{
+.footer__bottom{
   width: inherit;
   background-color: rgba(35, 47, 56, 0.6);
   position: absolute;
@@ -154,7 +173,7 @@ a {
 }
 
 .site-navigation_footer {
-  padding: 28px 240px;
+  padding: 22px 240px;
 }
 .site-navigation_footer .nav-bar__elem{
   color: #FFFFFF;
