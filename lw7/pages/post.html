@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/img/favicon/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/second_style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="site-navigation site-navigation_header">
+      <span class="logo logo_header">Escape.</span>
+      <nav class="nav-bar">
+        <a href="#" class="nav-bar__elem">HOME</a>
+        <a href="#" class="nav-bar__elem">CATEGORIES</a>
+        <a href="#" class="nav-bar__elem">ABOUT</a>
+        <a href="#" class="nav-bar__elem">CONTACT</a>
+      </nav>
+    </div>
+    <div class="header__text">
+      <h1 class="header__title">{{ .Title }}</h1>
+      <p class="header__subtitle">{{ .Subtitle }}</p>
+    </div>
+  </header>
+  <main class="main-body">
+    <div class="post__image">
+      <img src="{{ .PostImage }}" alt="">
+    </div>
+    <div class="post__text">
+      {{ .Content }}
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__title">Stay in Touch</p>
+      <div class="footer__form input-mail">
+        <input class="input-mail__field" type="text" name="email" placeholder="Enter your email address">
+        <button class="input-mail__btn" type="submit"><span>Submit</span></button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="site-navigation site-navigation_footer">
+        <span class="logo logo_footer">Escape.</span>
+        <nav class="nav-bar">
+          <a href="#" class="nav-bar__elem">HOME</a>
+          <a href="#" class="nav-bar__elem">CATEGORIES</a>
+          <a href="#" class="nav-bar__elem">ABOUT</a>
+          <a href="#" class="nav-bar__elem">CONTACT</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

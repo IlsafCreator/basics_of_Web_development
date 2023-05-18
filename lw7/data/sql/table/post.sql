@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS post
     `author_url`   VARCHAR(255) NOT NULL,
     `publish_date` VARCHAR(255) NOT NULL,
     `featured`     TINYINT(1) DEFAULT 0 NOT NULL,
+    'content'      TEXT NOT NULL,
     PRIMARY KEY (`post_id`)
 ) ENGINE = InnoDB
 CHARACTER SET = utf8mb4
